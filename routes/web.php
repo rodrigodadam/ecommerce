@@ -17,5 +17,5 @@ use App\Http\Controllers\Basic\BasicController;
 Route::controller(BasicController::class)->group(function () {
     Route::get('/', 'home')->name('home.page');
     Route::get('/about', 'about')->name('about.page');
-    Route::get('/contact', 'contact');
+    Route::get('/contact', 'contact')->name('contact.page');
 });
