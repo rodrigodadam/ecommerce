@@ -8,5 +8,7 @@
 </head>
     <body>
         <h1>This is my about page from Controller</h1>
+        <a href="{{ route('contact.page') }}">Contact</a>
+        <a href="{{ route('home.page') }}">Home</a>
     </body>
 </html>
