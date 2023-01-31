@@ -14,9 +14,8 @@ use App\Http\Controllers\Basic\BasicController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::controller(BasicController::class)->group(function () {
+    Route::get('/', 'home');
+    Route::get('/about', 'about');
+    Route::get('/contact', 'contact');
 });
-
-Route::get('/about', [BasicController::class, 'about']);
-Route::get('/contact', [BasicController::class, 'contact']);
